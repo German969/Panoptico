@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<link href="css/main.css" rel="stylesheet" type="text/css">
+
+<head>
+
+  <meta charset="utf-8">
+  <title>Cochelimpio - Lavado Integral de Vehiculos</title>
+   <link rel="stylesheet" type="text/css" href="css/stylePrecio.css" />
+  <script type="text/javascript" src="engine1/jquery.js"></script>
+  <script type="text/javascript" src="js/bootstrap.js"></script>
+</head>
+
+<body>
+<div class="pagina">
+<div class="bloque">
+	<header>
+		
+		<div id="mainmenu-container">
+			<div id="mainmenu-container">
+		<ul id="mainmenu">
+              <li><img src="imgB/Logo2.png" width="98px" height="98px"></li>
+			<li><a href="index.html">Inicio</a></li>
+            <li><a href="BENJA-Pedir-presupuesto.html">Presupuesto</a></li>
+			<li><a href="BENJA-servicios.html">Servicios</a></li>
+			<li><a href="BENJA-loggin.html">Login</a></li>
+			<li class="activo"><a href="BENJA-contacto.html">Contacto</a></li>
+		</ul>
+		
+		
+		
+            </div>
+		</div>
+		
+
+		<div id="logo">
+			
+			
+			
+		</div>
+
+		<div class="linea-texto">
+				LA MEJOR ATENCION ONLINE LAS 24 HORAS
+			</div>
+			
+	</header>
+
+	<body>
+	<div id="subheader">
+    	  <div class="row">
+          	<div class="span12">
+            	<h1>Contacto</h1>
+            </div>
+          </div>
+    </div>
+	<!-- subheader close -->  
+        
+   
+    
+	<!-- content begin -->
+    <div id="contentC">
+    	<div class="container margen1">
+        	<div class="row">
+            	<div class="span8 izq">
+						Escribanos si quiere obtener m&aacutes informaci&oacuten o realizar alguna queja.<br/><br/>
+                	<div class="contact_form_holder">
+<form id="contacto" class="row" name="form1" method="" action="" onsubmit="return validacion()">
+
+	<div class="span4 pad2">
+		<label id="letra1">Apellido y Nombre <span class="req">*</span></label>
+		<input type="text" class="full" name="Nombre y Apellido" id="nombrecito"/>
+	</div>
+	
+	<div class="span4 pad2">
+		<label id="letra2">Email <span class="req">*</span></label>
+		<input type="text" class="full" name="Email" id="emailcito"/>
+	</div>
+	
+	
+	<div class="span8">
+		<label id="letra3">Mensaje <span class="req">*</span></label>
+		<textarea cols="10" rows="10" name="Comentario" id="textito" class="full2"></textarea>
+	
+		<p id="btnsubmit" class="pad2t"><input class="btn btn-primary" type="submit" value="Enviar"> </p>
+	
+		<span class="req">*</span> Los campos son obligatorios.		
+	</div>
+	
+</form>
+					</div>
+            
+                
+        	</div>
+			</div>
+        </div>
+		
+	</div>
+	</body>
+
+		
+    <footer>
+        <div class="cont3">
+            <div class="row">
+
+
+
+                <div class="nosotros">
+                    <div class="sin-margen span3">
+                        <h3 class="negro">Sobre Nosotros</h3>
+                        Panoptico es una empresa de seguridad del hogar y pequeñas o medianas empresas. Nuesto objetivo es brindar el mejor servicio posible, garantizando su seguridad al maximo.
+                    </div>
+                </div>
+
+
+
+
+
+
+                <div class="contactos-b">
+                    <div class="sin-margen span3">
+                        <h3 class="negro">Atención al  Cliente</h3>
+                        <address>
+                            Entre Rios 1747 - Corrientes
+                            <span><strong>Tel&eacutefono: </strong> 0379 - 4606797</span>
+                            <span><strong>Email: </strong><a id="correo2" href=" atencion.cliente@cochelimpio.com">atencion.cliente@panoptico.com</a></span>
+                        </address>
+                    </div>
+                </div>
+
+                <div class="iconos-social">
+                    <h3 class="margen-menor negro">Síguenos</h3>
+                    <ul id="lista-social">
+                        <li><a href="https://www.facebook.com/"><img src="img/social-icons/facebook.png" onmouseover="this.src='img/social-icons/facebook2.png';" onmouseout="this.src='img/social-icons/facebook.png';" /></a></li>
+                        <li><a href="https://twitter.com/"><img src="img/social-icons/twitter.png" onmouseover="this.src='img/social-icons/twitter2.png';" onmouseout="this.src='img/social-icons/twitter.png';" /></a></li>
+                        <li><a href="https://plus.google.com/"><img src="img/social-icons/gplus.png" onmouseover="this.src='img/social-icons/gplus2.png';" onmouseout="this.src='img/social-icons/gplus.png';" /></a></li>
+                        <li><a href="https://www.youtube.com/"><img src="img/social-icons/youtube.png" onmouseover="this.src='img/social-icons/youtube2.png';" onmouseout="this.src='img/social-icons/youtube.png';" /></a></li>
+                    </ul>
+                </div>
+
+
+
+            </div>
+        </div>
+
+        <div id="subfooter">
+            <div class="container">
+                <div class="row" class="span12">
+                    <div class="span10.2">
+                        <div class="copyr">
+                            Copyiright 2016 &copy; PANOPTICO. All rights reserved.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </footer>
+    <!-- footer close -->
+	
+    </div>
+</div>
+    <SCRIPT LANGUAGE="JavaScript">
+ var form = document.getElementById("contacto");
+
+form.addEventListener("submit", function(event){
+  event.preventDefault();
+  var comodin = true,
+      elementos = this.elements,
+      total = elementos.length;
+  
+  for (var i = 0; i < total; i++){
+    if (!elementos[i].value.length){
+      alert ("Debes de ingresar el " + elementos[i].name);
+      elementos[i].focus();
+      comodin = false;
+      break;
+    }
+  }
+  
+  if (comodin){
+    this.submit();
+    alert("Mensaje enviado.");
+  }
+}, false);
+    </SCRIPT>
+</body>
+</html>

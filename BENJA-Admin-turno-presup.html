@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<link href="css/main.css" rel="stylesheet" type="text/css">
+
+<head>
+
+  <meta charset="utf-8">
+  <title>Cochelimpio - Lavado Integral de Vehiculos</title>
+  <meta name="author" content="German Agustin Monzon">
+  
+  <link rel="stylesheet" type="text/css" href="engine1/style.css" />
+  <script type="text/javascript" src="engine1/jquery.js"></script>
+  
+  <script src="js/move4.js"></script>
+  <script type="text/javascript" src="js/redir-s.js"></script>
+  
+	<script src="js/elim-prod.js"></script>
+	<script src="js/comp-prod.js"></script>
+	<script src="js/modif-t.js"></script>
+	<script src="js/acept-mod-t.js"></script>
+	<script src="js/agregar-t.js"></script>
+
+</head>
+
+<body>
+
+<div class="pagina">
+<div class="bloque">
+<header>
+	
+	<div id="mainmenu-container">
+        <nav>
+        <ul>
+              <li><img src="imgB/Logo2.png" width="98px" height="98px"></li>
+          <li><a href="BENJA-Admin-presupuestos.html">Presupuestos</a></li>
+          <li class="activo"><a href="#">Turnos<i class="icon-angle-down"></i></a>
+            <div class="submenu">
+						<div class="submenu-items">
+							<ul>
+								<li><a href="BENJA-Admin-turno-inst.html">Instalaciones</a></li>
+								<li><a href="BENJA-Admin-turno-presup.html">Presupuestos</a></li>
+							</ul>
+						</div>
+						
+					</div>
+            </li>
+            
+          <li><a href="BENJA-Admin-instalaciones.html">Instalaciones</a></li>
+            
+          <li><a href="BENJA-Admin-emergencias.html">Emergencia</a></li>
+        </ul>
+        
+		<span><a href="index.html" ><input id="im" type="button" class="cerrar btn btn-primary" value="Cerrar Sesion"> </a></span>
+		<div class="usuarioE" onclick="mover(this,document.getElementById('im'),900)"><i class=" icon-user"></i> Usuario: Admin</div> 
+        </nav>
+	</div>
+	
+
+	<div id="logo">
+		
+
+	<div class="linea-texto">
+		LA MEJOR ATENCION ONLINE LAS 24 HORAS
+	</div>
+    </div>
+</header>
+
+	<div id="subheader">
+    	  <div class="row">
+          	<div class="span12">
+            	<h1>Proximas presupuestaciones</h1>
+            </div>
+          </div>
+    	<span>
+        *proximos presupuestos a realizar</span>
+    </div> 
+    
+    <div class="clearfix"></div>
+    
+	
+
+    <div id="contentM">
+    	<div class="achicado container">
+		
+			<div class='ftur'>
+			<input type="text" placeholder="&#128269 Buscar por numero de pedido"/>
+                <a href="#"><input type="submit" value="Buscar"></a>
+			</div>
+		
+		
+				<table id="listadop" class="centrado borderb table table-striped">
+				  <thead>
+					<tr>
+					  <th>N pedido</th>
+					  <th>ID Cliente</th>
+					  <th>Nombre</th>
+					  <th>Fecha</th>
+                      <th>Direccion</th>
+                      <th>Hora</th>
+                      <th>Estado</th>
+
+					  <th> </th>
+					</tr>
+				  </thead>
+				  <tbody>
+					<tr id="p1">
+						<th id="f1c1" scope="row">02/06/17</th>
+						<td id="f1c2">00235</td>
+						<td id="f1c3">00029</td>
+						<td id="f1c4">Kugler Benjamin</td>
+                        <td id="f1c5">pendiente</td>
+						<td id="f1c6">1747 Entre Rios</td>
+                        <td id="f1c7">1747 Entre Rios</td>
+						<td><input type="button" class="btn btn-primary" value="Eliminar" onclick="borrar(document.getElementById('p1'))"></td>
+						<td id="M1"><input type="button" class="btn btn-primary" value="Modificar" onclick="modp2(1)"></td>
+					</tr>
+                      <tr id="p2">
+						<th id="f2c1" scope="row">02/06/17</th>
+						<td id="f2c2">00235</td>
+						<td id="f2c3">00029</td>
+						<td id="f2c4">Kugler Benjamin</td>
+                        <td id="f2c5">pendiente</td>
+						<td id="f2c6">1747 Entre Rios</td>
+                        <td id="f2c7">1747 Entre Rios</td>
+						<td><input type="button" class="btn btn-primary" value="Eliminar" onclick="borrar(document.getElementById('p1'))"></td>
+						<td id="M1"><input type="button" class="btn btn-primary" value="Modificar" onclick="modp2(1)"></td>
+					</tr>
+                      <tr id="p3">
+						<th id="f3c1" scope="row">02/06/17</th>
+						<td id="f3c2">00235</td>
+						<td id="f3c3">00029</td>
+						<td id="f3c4">Kugler Benjamin</td>
+                        <td id="f3c5">pendiente</td>
+						<td id="f3c6">1747 Entre Rios</td>
+                        <td id="f3c7">1747 Entre Rios</td>
+						<td><input type="button" class="btn btn-primary" value="Eliminar" onclick="borrar(document.getElementById('p1'))"></td>
+						<td id="M1"><input type="button" class="btn btn-primary" value="Modificar" onclick="modp2(1)"></td>
+					</tr>
+                     
+					
+					
+					<input type="text" id="last" value="5">
+					<input type="text" id="tot" value="5">
+					
+				  </tbody>
+				</table>
+			<div style="display:flex; justify-content:center;">  
+        <div class="span3 btn-book-submit">
+              <a href="index-ese.html"><input type="button" class="btn btn-primary" value="Imprimir"> </a>
+        </div>     
+        <div class="span3 btn-book-submit">
+              <input type="button" class="btn btn-secundary" value="Agregar Presupuesto" onclick="agregar()">
+        </div>
+            </div>
+				
+             
+    	</div>
+        
+        </div>
+	
+	<footer>
+  		<div class="cont3">
+			<div class="row">
+				
+				<div class="nosotros">
+                <div class="sin-margen span3">
+                	<h3 class="negro">Nosotros</h3>
+                    Cochelimpio nació como un proyecto de 5 estudiantes de la ciudad de Resistencia, Chaco, y actualmente gestiona mas de 20 sucursales en toda la región.
+                </div>
+				</div>
+				
+				<div class="contactos-b">
+				<div class="sin-margen span3">
+                	<h3 class="negro">Contactos</h3>
+                    	<address>
+                         French 414 - Resistencia - Chaco
+                        <span><strong>Tel&eacutefono: </strong> 0362 - 4027867</span>
+                        <span><strong>Fax: </strong> 0362 - 4027867</span>
+                        <span><strong>Email: </strong><a id="correo" href="atencion.cliente@cochelimpio.com"> atencion.cliente@cochelimpio.com</a></span>
+						</address>   
+                </div>
+				</div>
+				
+				<div class="iconos-social">
+					<h3 class="margen-menor negro">Síguenos</h3>
+					<ul id="lista-social">
+						<li><a href="https://www.facebook.com/"><img src="img/social-icons/facebook.png" onmouseover="this.src='img/social-icons/facebook2.png';" onmouseout="this.src='img/social-icons/facebook.png';"/></a></li>
+						<li><a href="https://twitter.com/"><img src="img/social-icons/twitter.png"  onmouseover="this.src='img/social-icons/twitter2.png';" onmouseout="this.src='img/social-icons/twitter.png';"/></a></li>
+						<li><a href="https://plus.google.com/"><img src="img/social-icons/gplus.png"  onmouseover="this.src='img/social-icons/gplus2.png';" onmouseout="this.src='img/social-icons/gplus.png';"/></a></li>
+						<li><a href="https://www.youtube.com/"><img src="img/social-icons/youtube.png"  onmouseover="this.src='img/social-icons/youtube2.png';" onmouseout="this.src='img/social-icons/youtube.png';"/></a></li>
+					</ul>
+				</div>
+				
+			</div>
+        </div>
+		
+		<div id="subfooter">
+        	<div class="container">
+                <div class="row" class="span12">
+                	<div class="span10.2">
+						<div class="copyr">
+                    	Copyiright 2016 &copy; COCHELIMPIO. All rights reserved.
+						</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+   	</footer>
+	<!-- footer close -->
+   
+</div>
+</div>
+	
+</body>
+
+</html>

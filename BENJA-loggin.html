@@ -1,0 +1,184 @@
+
+<html lang="es">
+
+<link href="css/main.css" rel="stylesheet" type="text/css">
+
+<head>
+
+  <meta charset="utf-8">
+  <title>Panoptico Seguridad</title>
+  <meta name="author" content="grupo 9 pa">
+  
+  <link rel="stylesheet" type="text/css" href="engine1/style.css" />
+  <script type="text/javascript" src="engine1/jquery.js"></script>
+  
+  <script type="text/javascript" src="js/enter.js"></script>
+  
+
+</head>
+<SCRIPT LANGUAGE="JavaScript"> 
+function Login(){ 
+var done=0; 
+var username=document.login.username.value; 
+username=username.toLowerCase(); 
+var password=document.login.password.value; 
+password=password.toLowerCase(); 
+if (username=="cliente" && password=="cliente") { window.location="BENJA-index.html"; done=1; }
+if (username=="admin" && password=="admin") { window.location="BENJA-Admin-presupuestos.html"; done=1; }
+    
+if (done==0) { alert("datos invalidos"); } 
+} 
+</SCRIPT> 
+<body>
+
+<div class="pagina">
+<div class="bloque">
+<header>
+	
+	<div id="mainmenu-container">
+		<ul id="mainmenu">
+              <li><img src="imgB/Logo2.png" width="98px" height="98px"></li>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="BENJA-Pedir-presupuesto.html">Presupuesto</a></li>
+			<li><a href="BENJA-servicios.html">Servicios</a></li>
+			<li class="activo"><a href="BENJA-loggin.html">Login</a></li>
+			<li><a href="BENJA-contacto.html">Contacto</a></li>
+		</ul>
+		
+		
+	</div>
+	
+
+	<div id="logo">
+		
+
+	<div class="linea-texto">
+		LA MEJOR ATENCION ONLINE LAS 24 HORAS
+	</div>
+    </div>
+</header>
+
+<div class="clearfix"></div>
+    
+    <!-- subheader begin -->
+	<div id="subheader">
+    	<div class="container">
+    	  <div class="row">
+          	<div class="span12">
+            	<h1>Inicio de sesi&oacuten</h1>
+            </div>
+          </div>
+    	</div>
+    </div>
+	<!-- subheader close -->  
+      <!--@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@2 -->
+
+    <!-- @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@2-->
+ 
+	<!-- content begin -->
+ <div id="contentI">
+    	<div class="container">
+        	<div class="row">
+            	<div class="reservas-form">
+                    <div class="span12">
+                    <div class="row">
+						
+                        <h3 class="nosale title span12" align="center">Introduzca sus datos</h3>
+						<div class="span3"></div>
+                     
+                        <form name="login">
+                    	<div class="tizq span3">
+                            <span class="text-label"><i class=" icon-user"></i>Usuario</span>
+                            <input name ="username" type="text" >
+                        </div>
+						<div class="tizq span3">
+                            <span class="text-label"><i class=" icon-lock"></i>Contrase&ntildea</span>
+                            <input type="password" name="password">  
+                         </div>
+					
+					
+						<h3 class="nosale title span12"></h3>
+						<div class="span3"></div>
+						<div class="span3 btn-book-submit">
+							<input class="btn btn-primary" type=button value="Entrar" onClick="Login()"> 
+						</div>
+						<div class="span3 btn-book-submit">
+							<a href="BENJA-index.html" ><input type="button" class="btn btn-secundary" value="Cancelar"> </a>
+						</div>
+                        </form>
+				
+										
+					</div>
+						
+<br>
+                    </div>
+					
+<div class="span12" align="center">Si olvid&oacute su usuario o contrase&ntildea contactese con Cochelimpio por los medios de contacto disponibles.</div>
+                    </div>
+                    
+            	</div>
+				
+            </div>
+			
+        </div>
+
+	
+	<!-- content close -->
+    
+<!-- footer begin -->
+	<footer>
+  		<div class="cont3">
+			<div class="row">
+				
+				<div class="nosotros">
+                <div class="sin-margen span3">
+                	<h3 class="negro">Nosotros</h3>
+                   Panoptico es una empresa de seguridad del hogar y pequeñas o medianas empresas. Nuesto objetivo es brindar el mejor servicio posible, garantizando su seguridad al maximo.
+                </div>
+				</div>
+				
+				<div class="contactos-b">
+				<div class="sin-margen span3">
+                	<h3 class="negro">Contactos</h3>
+                    <address>
+                        Entre Rios 1747 - Corrientes
+                        <span><strong>Tel&eacutefono: </strong> 0379 - 4606797</span>
+                        <span><strong>Email: </strong><a id="correo2" href=" atencion.cliente@cochelimpio.com">atencion.cliente@panoptico.com</a></span>
+                    </address>
+                </div>
+				</div>
+				
+				<div class="iconos-social">
+					<h3 class="margen-menor negro">Síguenos</h3>
+					<ul id="lista-social">
+						<li><a href="https://www.facebook.com/"><img src="img/social-icons/facebook.png" onmouseover="this.src='img/social-icons/facebook2.png';" onmouseout="this.src='img/social-icons/facebook.png';"/></a></li>
+						<li><a href="https://twitter.com/"><img src="img/social-icons/twitter.png"  onmouseover="this.src='img/social-icons/twitter2.png';" onmouseout="this.src='img/social-icons/twitter.png';"/></a></li>
+						<li><a href="https://plus.google.com/"><img src="img/social-icons/gplus.png"  onmouseover="this.src='img/social-icons/gplus2.png';" onmouseout="this.src='img/social-icons/gplus.png';"/></a></li>
+						<li><a href="https://www.youtube.com/"><img src="img/social-icons/youtube.png"  onmouseover="this.src='img/social-icons/youtube2.png';" onmouseout="this.src='img/social-icons/youtube.png';"/></a></li>
+					</ul>
+				</div>
+				
+			</div>
+        </div>
+		
+		<div id="subfooter">
+        	<div class="container">
+                <div class="row" class="span12">
+                	<div class="span10.2">
+						<div class="copyr">
+                    	Copyiright 2016 &copy; PANOPTICO. All rights reserved.
+						</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+   	</footer>
+	<!-- footer close -->
+   
+</div>
+</div>
+	
+</body>
+
+</html>
